@@ -1,46 +1,36 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
 
-**!! *Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(Paradigma)_(NomeDoProjeto)*. !!** 
 
-Paradigmas:
- - Funcional
- - Logico
- - SMA
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2023.1_G1_Logico_ProjetoRoteirosAereos*. !!**
- 
- (Apague esses comentários)
-
-# NomeDoProjeto
+# Dengoso
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T02 <br>
-**Nro do Grupo (de acordo com a Planilha de Divisão dos Grupos)**: XX<br>
-**Paradigma**: XXXXXXXXXX<br>
+**Grupo**: 2<br>
+**Paradigma**: SMA<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 180099353  |  Cibele Freitas Goudinho - @CibeleG |
+| 190108011  |  Guilherme Brito Vilas Boas - @dev-brito |
+| 170105342  |  Irwin Schmitt - @irwinschmitt |
+| 180103792  |  Júlia Farias Sousa - @julisous |
+| 180104390  |  Lameque Fernandes Azevedo - @LamequeFernandes |
+| 201000379  |  Leonardo Milomes Vitoriano - @leonardomilv3 |
+| 180078224  |  Thaís Rebouças de Araujo - @Thais-ra |
+| 200028367  |  Victor Hugo Oliveira Leão - @victorleaoo |
+
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
-Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
-Capriche nessa seção, pois ela é a primeira a ser lida pelos interessados no projeto.
+Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano e qual o grau de infecção em cada tipo de ambiente. Foi utilizado o paradigma multiagentes em dois tipos de visualização, uma orientada ao comportamento do vírus no corpo humano e a outra simulando os picos de infecção em ambientes controlados. Para a criação dessas visualizações foi utilizado o programa Mesa. Para fins de recursos fidedignos foram utilizados os Boletins Epidemiológicos de 2022 e 2023 sobre a dengue no Distrito Federal.
+
+# Observação: ESTE PROGRAMA FOI CONTRUÍDO APENAS PARA FINS EDUCATIVOS E NÃO REALIZA PREVISÕES REAIS!
 
 ## Screenshots
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!
+**Linguagens**: Python3.9<br>
+**Tecnologias**: Mesa 1.2.1<br>
+
 
 ## Uso 
 Explique como usar seu projeto.
@@ -71,5 +61,6 @@ Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não es
 (iV) Trabalhos Futuros.
 
 ## Fontes
-Referencie, adequadamente, as referências utilizadas.
-Indique ainda sobre fontes de leitura complementares.
+-https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf
+-https://www.saude.df.gov.br/informes-dengue-chikungunya-zika-febre-amarela
+-https://noticias.unb.br/125-saude/5742-especialista-da-unb-analisa-aumento-de-casos-de-dengue-no-distrito-federal
