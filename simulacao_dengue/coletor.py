@@ -1,4 +1,5 @@
 #coleta informacoes da situacao de cada grupo de pessoas
+from mesa import Model
 
 class Status:
     @staticmethod
