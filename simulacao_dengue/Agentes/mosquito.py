@@ -16,13 +16,13 @@ class Mosquito(Agent):
     def sting(self):
         cellmates = self.model.grid.get_cell_list_contents([self.pos])
         persons = [obj for obj in cellmates if isinstance(obj, Pessoa)]
-        if len(persons) > 1:
+        if len(persons) > 0:
             person = random.choice(persons)
-            # O que fazer quando o mosquito picar a pessoa?
-            self.model.grid._remove_agent(self.pos, person)
-            self.model.schedule.remove(person)
+            if not person.isInfected:
+                person.is_sting()
+                person.increase_counter_infected()
 
     def step(self):
         self.move()
-        self.sting()    
+        self.sting()
 
