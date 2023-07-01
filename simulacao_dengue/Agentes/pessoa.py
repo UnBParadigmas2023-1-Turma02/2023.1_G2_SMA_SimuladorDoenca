@@ -9,17 +9,18 @@ class Pessoa(Agent):
         self.timesInfected = 0
 
     def increase_counter_infected(self):
-        if self.timesInfected == 0:
-            self.timesInfected += 1
-            self.calculate_probability_die(0.15)
-        elif self.timesInfected == 1:
-            self.timesInfected += 1
-            self.calculate_probability_die(0.35)
-        elif self.timesInfected == 2:
-            self.timesInfected += 1
-            self.calculate_probability_die(0.75)
-        else:
-            ... # vive para sempre ;)
+        match self.timesInfected:
+            case 0:
+                self.timesInfected += 1
+                self.calculate_probability_die(0.15)
+            case 1:
+                self.timesInfected += 1
+                self.calculate_probability_die(0.35)
+            case 2:
+                self.timesInfected += 1
+                self.calculate_probability_die(0.75)
+            case _:
+                ... # vive para sempre ;)
 
     def calculate_probability_die(self, probability_die):
         if random.random() < probability_die:
