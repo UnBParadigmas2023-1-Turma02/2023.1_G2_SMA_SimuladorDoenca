@@ -50,6 +50,8 @@ params = {
     "adicao_vida": mesa.visualization.Slider("Adição de Vida dos Glóbulos Brancos", 0.1, 0.0, 1.0, 0.1),
     "taxa_rep_dengue": mesa.visualization.Slider("Taxa de reprodução da Dengue", 0.1, 0.0, 1.0, 0.1),
     "taxa_rep_globulos": mesa.visualization.Slider("Taxa de reprodução dos Glóbulos Brancos", 0.1, 0.0, 1.0, 0.1),
+    "dano_dengue": mesa.visualization.Slider("Dano da Dengue nos Glóbulos Brancos", 0.1, 0.0, 1.0, 0.1),
+    "dano_globulos": mesa.visualization.Slider("Dano dos Glóbulos Brancos na dengue", 0.1, 0.0, 1.0, 0.1),
 }
 
 # Configuração do servidor de visualização
