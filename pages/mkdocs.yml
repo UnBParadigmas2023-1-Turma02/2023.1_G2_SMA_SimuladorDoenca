@@ -1,0 +1,14 @@
+site_name: Dengoso
+
+repo_name: '2023.1_G2_Logico_OptaSoftware'
+repo_url: 'https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca'
+
+theme:
+  name: material
+  language: 'pt'
+
+nav:
+  - Início: index.md
+  - Simulações: 
+    - Simulação Contaminação: simulacao_contaminacao.md
+    - Simulação Reação do Corpo Humano: simulacao_reacao_ch.md
