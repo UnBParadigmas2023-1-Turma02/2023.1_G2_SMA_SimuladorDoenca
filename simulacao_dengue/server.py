@@ -1,9 +1,7 @@
 import model
 import mosquito
+
 import mesa
-from mesa.visualization.ModularVisualization import ModularServer
-
-
 
 
 def getColorPerson(agent):
@@ -64,23 +62,17 @@ chart_element = mesa.visualization.ChartModule(
 
 model_kwargs = {"num_mosquito": mesa.visualization.Slider("Quantidade de Insetos na Cidade", 1, 1, 20, 1),
                 "num_pessoa": mesa.visualization.Slider("Quantidade de Pessoas na Cidade", 1, 1, 100, 1),
-                "num_infectados":mesa.visualization.ChartModule(100),
                 "width": 20,
                 "height": 20}
 
-infectation_chart = mesa.visualization.ChartModule([
-    {"Label": "Não Infectados", "Color": "green"},
-    {"Label": "Infectados", "Color": "yellow"},  
-   
-])
+situation_chart = mesa.visualization.ChartModule(
+   [ {"Label": "Não infectados", "Color": "green"},
+    {"Label": "Infectados", "Color": "yellow"}]
+)
 
-
-
-server = ModularServer(
+server = mesa.visualization.ModularServer(
     model.ContaminationModel,
-    [canvas_element,infectation_chart],
+    [canvas_element, situation_chart],
     "Contaminação - Dengue",
-    model_kwargs,
-   
-    
+    model_kwargs
 )
