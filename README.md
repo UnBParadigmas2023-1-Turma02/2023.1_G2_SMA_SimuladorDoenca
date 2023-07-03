@@ -35,8 +35,9 @@ Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano
 
 O projeto está dividido em duas pastas, em que cada uma tem suas instruções de instalação e uso:
 
-- [Reação do Corpo Humano](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/5638256ad4f2588e73faa24ca060df3448513a42/simulacao_dengue)
-- [Contaminação](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/5638256ad4f2588e73faa24ca060df3448513a42/reacao_corpo_humano)
+- [Reação do Corpo Humano](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/main/reacao_corpo_humano)
+- [Contaminação](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/main/simulacao_dengue)
+  
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
