@@ -32,5 +32,5 @@ Assim, na lateral esquerda é possível alterar os parâmetros desejados para a 
 
 ### Reação do corpo humano
 
-![Início da Simulação](reacao_corpo_humano/assets/telainicial-1.png)
-![Fim da Simulação](reacao_corpo_humano/assets/telafinal-2.png)
+![Início da Simulação](assets/telainicial-1.png)
+![Fim da Simulação](assets/telafinal-2.png)
