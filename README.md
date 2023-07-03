@@ -1,5 +1,3 @@
-
-
 # Dengoso
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T02 <br>
@@ -20,7 +18,7 @@
 
 
 ## Sobre 
-Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano e qual o grau de infecção em cada tipo de ambiente. Foi utilizado o paradigma multiagentes em dois tipos de visualização, uma orientada ao comportamento do vírus no corpo humano e a outra simulando os picos de infecção em ambientes controlados. Para a criação dessas visualizações foi utilizado o programa Mesa. Para fins de recursos fidedignos foram utilizados os Boletins Epidemiológicos de 2022 e 2023 sobre a dengue no Distrito Federal.
+Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano e qual o grau de infecção em cada tipo de ambiente. Dessa forma, Foi utilizado o Paradigma Multiagentes em dois tipos de visualização, uma orientada a **reação do corpo humano ao vírus** e a outra **simulando os picos de infecção em ambientes controlados**. Para a criação dessas visualizações foi utilizado o framework em Python Mesa. Para fins de recursos fidedignos foram utilizados os Boletins Epidemiológicos de 2022 e 2023 sobre a dengue no Distrito Federal.
 
 # Observação: ESTE PROGRAMA FOI CONTRUÍDO APENAS PARA FINS EDUCATIVOS E NÃO REALIZA PREVISÕES REAIS!
 
@@ -31,11 +29,12 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 **Linguagens**: Python3.9<br>
 **Tecnologias**: Mesa 1.2.1<br>
 
-
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+
+O projeto está dividido em duas branches, em que cada uma tem suas instruções de instalação e uso:
+
+- [Reação do Corpo Humano](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/reacao-corpo-humano)
+- [Contaminação](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/simulacao)
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
@@ -52,6 +51,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
 | Cibele  |  Programação da interação entre agentes Dengue x Glóbulos Brancos | Excelente |
+| Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
 
 ## Outros 
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
