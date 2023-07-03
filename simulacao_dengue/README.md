@@ -1,4 +1,4 @@
-# Dengoso - Reação do Corpo Humano
+# Dengoso - Simulação de Contaminação
 
 ## Alunos que trabalharam nesse contexto do trabalho
 
