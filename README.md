@@ -55,12 +55,16 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | Cibele  |  Programação da interação entre agentes Dengue x Glóbulos Brancos | Excelente |
 | Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
 |Guilherme | Configuração do servidor e interface do MESA e implementações pontuais nos modelos e agentes da simulação de contaminação. | Excelente |
+|Júlia Farias| Implementação dos gráficos do comportamento da simulação de contaminação | Excelente |
+
 
 ## Outros 
 
 (i) Lições Aprendidas:
 
 > Guilherme: Gostei bastante desse paradigma e especificamente da biblioteca do MESA, pois me abriu os olhos para diversas simulações que podem ser feitas utilizando dessa biblioteca, como simulações de epidemias, interações sociais e ambientais. Além de poder aperfeiçoar na linguagem Python, que não é uma linguagem que sou muito adepto(Java é melhor, ja ganhou meu coração, mas aqui até que eu gostei de você python, fica triste não).
+
+>Júlia: Gostei muito do paradigma, senti a curva de aprendizado mais rápida e a possibilidade de dividir em dois trabalhos fez com que sentisse que todos estavam fazendo partes importantes do trabalho e que pudessemos trabalhar em conjunto ao mesmo tempo.
     
 (ii) Percepções:
 
@@ -71,6 +75,6 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 > Adequação de taxas de morte, contaminação para uma simulação mais real.
 
 ## Fontes
--https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf
--https://www.saude.df.gov.br/informes-dengue-chikungunya-zika-febre-amarela
--https://noticias.unb.br/125-saude/5742-especialista-da-unb-analisa-aumento-de-casos-de-dengue-no-distrito-federal
+ **https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf
+**https://www.saude.df.gov.br/informes-dengue-chikungunya-zika-febre-amarela
+**https://noticias.unb.br/125-saude/5742-especialista-da-unb-analisa-aumento-de-casos-de-dengue-no-distrito-federal
