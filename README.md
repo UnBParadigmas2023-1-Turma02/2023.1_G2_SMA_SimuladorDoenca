@@ -18,12 +18,14 @@
 
 
 ## Sobre 
-Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano e qual o grau de infecção em cada tipo de ambiente. Dessa forma, Foi utilizado o Paradigma Multiagentes em dois tipos de visualização, uma orientada a **reação do corpo humano ao vírus** e a outra **simulando os picos de infecção em ambientes controlados**. Para a criação dessas visualizações foi utilizado o framework em Python Mesa. Para fins de recursos fidedignos foram utilizados os Boletins Epidemiológicos de 2022 e 2023 sobre a dengue no Distrito Federal.
+Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano e qual o grau de infecção em cada tipo de ambiente. Dessa forma, Foi utilizado o Paradigma Multiagentes em dois tipos de visualização, uma orientada a **reação do corpo humano ao vírus** e a outra **simulando os picos de infecção em ambientes controlados**. Para a criação dessas visualizações foi utilizado o framework em Python Mesa.
 
-# Observação: ESTE PROGRAMA FOI CONTRUÍDO APENAS PARA FINS EDUCATIVOS E NÃO REALIZA PREVISÕES REAIS!
+# Observação: ESTE PROGRAMA FOI CONSTRUÍDO APENAS PARA FINS EDUCATIVOS E NÃO REALIZA PREVISÕES REAIS!
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+
+![Início da Simulação](simulacao_dengue/assets/image.png)
+![Simulação](simulacao_dengue/assets/simulacao.gif)
 
 ## Instalação 
 **Linguagens**: Python3.9<br>
@@ -31,10 +33,10 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 
 ## Uso 
 
-O projeto está dividido em duas branches, em que cada uma tem suas instruções de instalação e uso:
+O projeto está dividido em duas pastas, em que cada uma tem suas instruções de instalação e uso:
 
-- [Reação do Corpo Humano](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/reacao-corpo-humano)
-- [Contaminação](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/simulacao)
+- [Reação do Corpo Humano](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/5638256ad4f2588e73faa24ca060df3448513a42/simulacao_dengue)
+- [Contaminação](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/5638256ad4f2588e73faa24ca060df3448513a42/reacao_corpo_humano)
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
@@ -52,13 +54,21 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | -- | -- | -- |
 | Cibele  |  Programação da interação entre agentes Dengue x Glóbulos Brancos | Excelente |
 | Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
+|Guilherme | Configuração do servidor e interface do MESA e implementações pontuais nos modelos e agentes da simulação de contaminação. | Excelente |
 
 ## Outros 
-Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
-(i) Lições Aprendidas;
-(ii) Percepções;
-(iii) Contribuições e Fragilidades, e
-(iV) Trabalhos Futuros.
+
+(i) Lições Aprendidas:
+
+> Guilherme: Gostei bastante desse paradigma e especificamente da biblioteca do MESA, pois me abriu os olhos para diversas simulações que podem ser feitas utilizando dessa biblioteca, como simulações de epidemias, interações sociais e ambientais. Além de poder aperfeiçoar na linguagem Python, que não é uma linguagem que sou muito adepto(Java é melhor, ja ganhou meu coração, mas aqui até que eu gostei de você python, fica triste não).
+    
+(ii) Percepções:
+
+(iii) Contribuições e Fragilidades:
+
+(iV) Trabalhos Futuros:
+
+> Adequação de taxas de morte, contaminação para uma simulação mais real.
 
 ## Fontes
 -https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf
