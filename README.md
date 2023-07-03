@@ -64,15 +64,20 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 
 > Guilherme: Gostei bastante desse paradigma e especificamente da biblioteca do MESA, pois me abriu os olhos para diversas simulações que podem ser feitas utilizando dessa biblioteca, como simulações de epidemias, interações sociais e ambientais. Além de poder aperfeiçoar na linguagem Python, que não é uma linguagem que sou muito adepto(Java é melhor, ja ganhou meu coração, mas aqui até que eu gostei de você python, fica triste não).
 
->Júlia: Gostei muito do paradigma, senti a curva de aprendizado mais rápida e a possibilidade de dividir em dois trabalhos fez com que sentisse que todos estavam fazendo partes importantes do trabalho e que pudessemos trabalhar em conjunto ao mesmo tempo.
+> Júlia: Gostei muito do paradigma, senti a curva de aprendizado mais rápida e a possibilidade de dividir em dois trabalhos fez com que sentisse que todos estavam fazendo partes importantes do trabalho e que pudessemos trabalhar em conjunto ao mesmo tempo.
+
+> Victor: Achei interessante como podemos ver diferentes agentes interagindo com o modelo como um todo, mas, também, com outros agentes, o que me leva a pensar em muitas diferentes utilidades que esse paradigma pode ter e trazer.
     
 (ii) Percepções:
+
+> Victor: Percebi que a curva de aprendizado com o framework MESA é muito rápida com a documentação e os diferentes exemplos propostos. Além disso, acredito que por esse paradigma poder ser desenvolvido em linguagens mais "usuais" para os membros do grupo, todos se sentiram confortáveis em trabalhar.
 
 (iii) Contribuições e Fragilidades:
 
 (iV) Trabalhos Futuros:
 
 > Adequação de taxas de morte, contaminação para uma simulação mais real.
+> Para a parte de reação do corpo humano, poderia ter um estudo mais aprofundado de como o vírus da dengue e o corpo trabalham nas diferentes situações, a fim de ter um projeto mais fidedigno à realidade.
 
 ## Fontes
  - https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf 
