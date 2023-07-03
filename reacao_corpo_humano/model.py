@@ -1,12 +1,12 @@
 import mesa
 import random
-from .globulo_branco import GlobuloBranco
-from .dengue import Dengue
+from globulo_branco import GlobuloBranco
+from dengue import Dengue
 
 from mesa.space import MultiGrid
 from mesa.time import SimultaneousActivation
 
-from .config import vida
+from config import vida
 
 class SimulacaoModel(mesa.Model):
     """

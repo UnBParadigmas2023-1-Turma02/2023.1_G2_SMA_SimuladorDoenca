@@ -34,7 +34,9 @@ class ContaminationModel(mesa.Model):
             x = random.randrange(self.grid.width)
             y = random.randrange(self.grid.height)
             self.grid.place_agent(mosquito, (x, y))
-
     
     def step(self):
         self.schedule.step()
+        pessoas = [obj for obj in self.schedule.agents if isinstance(obj, Pessoa) and obj.timesInfected<3]
+        if len(pessoas) == 0:
+            self.running = False

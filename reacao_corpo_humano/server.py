@@ -1,12 +1,12 @@
 import mesa
-from .globulo_branco import GlobuloBranco
-from .dengue import Dengue
-from .model import SimulacaoModel
+from globulo_branco import GlobuloBranco
+from dengue import Dengue
+from model import SimulacaoModel
 
 from mesa.visualization.modules import CanvasGrid, TextElement
 from mesa.visualization.ModularVisualization import ModularServer
 
-from .config import width, height, num_globulos
+from config import width, height, num_globulos
 
 class VidaElement(TextElement):
     """
