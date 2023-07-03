@@ -19,19 +19,15 @@ class VidaElement(TextElement):
 def agent_portrayal(agent):
     if isinstance(agent, Dengue):
         return {
-            "Shape": "circle",
-            "Color": "red",
-            "Filled": "true",
+            "Shape": "assets/virus.png",
+            "scale": 0.9,
             "Layer": 0,
-            "r": 0.5
         }
     elif isinstance(agent, GlobuloBranco):
         return {
-            "Shape": "circle",
-            "Color": "blue",
-            "Filled": "true",
+            "Shape": "assets/globulo-branco.png",
+            "scale": 0.9,
             "Layer": 0,
-            "r": 0.5
         }
     
 # Criação do modelo e grade de visualização
