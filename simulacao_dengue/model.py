@@ -4,6 +4,21 @@ from pessoa import Pessoa
 from mosquito import Mosquito
 import random
 
+def count_health(model):
+        count = 0
+        for agent in model.schedule.agents:
+            if isinstance(agent, Pessoa) and agent.timesInfected == 0:
+                count += 1
+        print(f"Saudáveis: {count}.")
+        return count
+
+    
+def count_unhealth(model):
+    count = 0
+    for agent in model.schedule.agents:
+        if isinstance(agent, Pessoa) and agent.timesInfected >= 1:
+            count += 1
+    return count
 
 class ContaminationModel(mesa.Model):
 
@@ -11,13 +26,15 @@ class ContaminationModel(mesa.Model):
         self.num_pessoa = num_pessoa
         self.num_mosquito = num_mosquito
         self.grid = mesa.space.MultiGrid(width, height, True)
-        self.schedule = mesa.time.RandomActivation(self)
-
+        self.schedule = mesa.time.SimultaneousActivation(self)
+        # Coletor de dados para o gráfico
+        self.datacollector = mesa.DataCollector(
+            model_reporters={"Não infectados": count_health, "Infectados": count_unhealth}
+        )
+        
         # Create persons
         for _ in range(self.num_pessoa):
             pessoa = Pessoa(uuid.uuid1(), self)
-            print("Criando pessoa")
-            print(pessoa.unique_id)
             self.schedule.add(pessoa)
 
             # Add the agent to a random grid cell
@@ -27,16 +44,20 @@ class ContaminationModel(mesa.Model):
 
         # Create mosquito
         for _ in range(self.num_mosquito):
-            print("Criando mosquito")
             mosquito = Mosquito(uuid.uuid1(), self)
             self.schedule.add(mosquito)
 
             x = random.randrange(self.grid.width)
             y = random.randrange(self.grid.height)
             self.grid.place_agent(mosquito, (x, y))
-    
+        
+        self.datacollector.collect(self)
+        
+
     def step(self):
+        self.datacollector.collect(self)
         self.schedule.step()
-        pessoas = [obj for obj in self.schedule.agents if isinstance(obj, Pessoa) and obj.timesInfected<3]
+        pessoas = [obj for obj in self.schedule.agents if isinstance(
+            obj, Pessoa) and obj.timesInfected < 3]
         if len(pessoas) == 0:
             self.running = False

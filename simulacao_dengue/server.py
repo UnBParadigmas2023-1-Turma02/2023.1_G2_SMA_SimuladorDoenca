@@ -57,17 +57,20 @@ canvas_element = mesa.visualization.CanvasGrid(
     circle_portrayal_example, 20, 20
 )
 
-chart_element = mesa.visualization.ChartModule(
-    [{"Label": "Contaminação - Dengue", "Color": "Pink"}])
-
 model_kwargs = {"num_mosquito": mesa.visualization.Slider("Quantidade de Insetos na Cidade", 1, 1, 20, 1),
                 "num_pessoa": mesa.visualization.Slider("Quantidade de Pessoas na Cidade", 1, 1, 100, 1),
                 "width": 20,
                 "height": 20}
 
+situation_chart = mesa.visualization.ChartModule(
+   [{"Label": "Não infectados", "Color": "green"},
+    {"Label": "Infectados", "Color": "yellow"}],
+   data_collector_name="datacollector"
+)
+
 server = mesa.visualization.ModularServer(
     model.ContaminationModel,
-    [canvas_element],
+    [canvas_element, situation_chart],
     "Contaminação - Dengue",
     model_kwargs
 )
