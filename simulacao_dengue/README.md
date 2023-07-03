@@ -44,4 +44,3 @@ Assim, na lateral esquerda é possível alterar os parâmetros desejados para a 
 
 ![Início da Simulação](assets/image.png)
 ![Simulação](assets/simulacao.gif)
-

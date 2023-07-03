@@ -28,6 +28,9 @@ Afim de usar o projeto, rode o seguinte comando para inicializar o mesa: ```mesa
 
 Abra a url [http://127.0.0.1:8521/]( http://127.0.0.1:8521/) para ter acesso ao projeto.
 
-Assim, na lateral esquerda é possível alterar os parâmetros desejados para a realização da simulação. No menu superior, na parte mais à direita, é possível apertar 'Start' para iniciar, 'Stop' para parar e 'Reset' para começar novamente a execução.
+Assim, na lateral esquerda é possível alterar os parâmetros desejados para a realização da simulação. No menu superior, na parte mais à direita, é possível apertar 'Start' para iniciar, 'Stop' para parar e 'Reset' para começar novamente a execução (alterar os parâmetros da simulação).
 
-**ADICIONAR SCREENSHOTS**
+### Reação do corpo humano
+
+![Início da Simulação](reacao_corpo_humano/assets/telainicial-1.png)
+![Fim da Simulação](reacao_corpo_humano/assets/telafinal-2.png)

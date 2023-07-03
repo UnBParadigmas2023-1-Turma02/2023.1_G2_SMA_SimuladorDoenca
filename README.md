@@ -24,6 +24,13 @@ Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano
 
 ## Screenshots
 
+### Reação do corpo humano
+
+![Início da Simulação](reacao_corpo_humano/assets/telainicial-1.png)
+![Fim da Simulação](reacao_corpo_humano/assets/telafinal-2.png)
+
+### Contaminação
+
 ![Início da Simulação](simulacao_dengue/assets/image.png)
 ![Simulação](simulacao_dengue/assets/simulacao.gif)
 
