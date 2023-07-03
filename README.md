@@ -28,7 +28,7 @@ Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano
 ![Simulação](simulacao_dengue/assets/simulacao.gif)
 
 ## Instalação 
-**Linguagens**: Python3.9<br>
+**Linguagens**: Python 3.10<br>
 **Tecnologias**: Mesa 1.2.1<br>
 
 ## Uso 

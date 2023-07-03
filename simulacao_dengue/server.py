@@ -5,7 +5,7 @@ import mesa
 
 
 def getColorPerson(agent):
-    colors = ["green", "yellow", "orange", "red"]
+    colors = ["blue", "yellow", "orange", "red"]
     if (not agent.isDead) and agent.isInfected:
         return "grey"
     elif agent.isDead:
