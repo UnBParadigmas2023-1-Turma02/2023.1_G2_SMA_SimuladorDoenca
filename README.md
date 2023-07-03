@@ -75,6 +75,6 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 > Adequação de taxas de morte, contaminação para uma simulação mais real.
 
 ## Fontes
- **https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf
-**https://www.saude.df.gov.br/informes-dengue-chikungunya-zika-febre-amarela
-**https://noticias.unb.br/125-saude/5742-especialista-da-unb-analisa-aumento-de-casos-de-dengue-no-distrito-federal
+ - https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf 
+ - https://www.saude.df.gov.br/informes-dengue-chikungunya-zika-febre-amarela
+ - https://noticias.unb.br/125-saude/5742-especialista-da-unb-analisa-aumento-de-casos-de-dengue-no-distrito-federal
