@@ -7,7 +7,7 @@ import mesa
 def getColorPerson(agent):
     colors = ["green", "yellow", "orange", "red"]
     if (not agent.isDead) and agent.isInfected:
-        return "yellow"
+        return "grey"
     elif agent.isDead:
         return "black"
     else:
@@ -20,7 +20,8 @@ def getPortrayalPerson(agent):
             "Shape": "cruz.png",
             "Layer": 0,
             "scale": .5,
-            "id": f"Pessoa {agent.unique_id}"
+            "id": f"Pessoa {agent.unique_id}",
+            "nr. infected": agent.timesInfected
         }
 
     return {

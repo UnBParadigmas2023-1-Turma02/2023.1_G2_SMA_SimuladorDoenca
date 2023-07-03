@@ -1,6 +1,6 @@
 # Dengoso - Reação do Corpo Humano
 
-## Alunos que trabalharam nessa branch do trabalho
+## Alunos que trabalharam nesse contexto do trabalho
 
 |Matrícula | Aluno |
 | -- | -- |
