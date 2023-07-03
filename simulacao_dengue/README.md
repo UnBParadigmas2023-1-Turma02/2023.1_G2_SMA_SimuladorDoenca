@@ -32,7 +32,7 @@ Para fins de representação dos agentes, foram utilizados os seguintes símbolo
 **Linguagens**: Python 3.10.6<br>
 **Tecnologias**: Mesa 1.2.1<br>
 
-Instale as dependências com o comando: ```pip install -r requirements.txt```.
+Instale as dependências com o comando: ```pip install -r requirements.txt```, comando este executado na raiz do projeto.
 
 ## Uso
 
