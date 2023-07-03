@@ -1,35 +1,59 @@
 import mesa
 import random
-from .agent import Dengue, GlobuloBranco
+from .globulo_branco import GlobuloBranco
+from .dengue import Dengue
 
 from mesa.space import MultiGrid
 from mesa.time import SimultaneousActivation
 
+from .config import vida
+
 class SimulacaoModel(mesa.Model):
-    def __init__(self, width, height, num_dengue, num_globulos, dano_vida, adicao_vida, taxa_rep_dengue, taxa_rep_globulos, dano_dengue, dano_globulos):
-        self.num_dengue = num_dengue
+    """
+    Classe que implementa o modelo de Simulação.
+    Atributos:
+    - width: comprimento do grid
+    - height: altura do grid
+    - num_globulos: quantidade inicial de globulos brancos
+    - dano_vida: dano de vida dos vírus
+    - adicao_vida: adicao de vida dos globulos
+    - taxa_rep_dengue: taxa de reprodução dos vírus
+    - taxa_rep_globulos: taxa de reprodução dos globulos
+    - dano_dengue: dano de cada vírus em globulos brancos
+    - dano_globulos: dano de cada globulo branco em vírus da dengue.
+    """
+    def __init__(self, width, height, num_globulos, dano_vida, adicao_vida, taxa_rep_dengue, taxa_rep_globulos, dano_dengue, dano_globulos):
         self.num_globulos = num_globulos
         self.dano_vida = dano_vida
         self.adicao_vida = adicao_vida
         self.taxa_rep_dengue = taxa_rep_dengue
         self.taxa_rep_globulos = taxa_rep_globulos
-        self.grid = MultiGrid(width, height, torus=True)
-        self.schedule = SimultaneousActivation(self)
-        self.vida = 50
-        self.current_id = 0
-        self.initial_dengue_pos = (0, 0)
-        self.initial_dengue_created = False
         self.dano_dengue = dano_dengue
         self.dano_globulos = dano_globulos
 
-        # Inicializar agentes Glóbulo Branco
-        for i in range(self.num_globulos):
+        self.grid = MultiGrid(width, height, torus=True)
+        self.schedule = SimultaneousActivation(self)
+
+        # Quantidade de vida inicial
+        self.vida = vida
+
+        # ID inicial
+        self.current_id = 0
+
+        # Inicializar agentes Glóbulo Branco (forma aleatoria no grid)
+        for _ in range(self.num_globulos):
             globulo = GlobuloBranco(self.next_id(), self, self.adicao_vida, self.taxa_rep_globulos, self.dano_globulos)
             self.schedule.add(globulo)
             x = self.random.randrange(self.grid.width)
             y = self.random.randrange(self.grid.height)
             self.grid.place_agent(globulo, (x, y))
 
+        # Inicializar agente da dengue (no canto do grid)
+        dengue = Dengue(self.next_id(), self, self.dano_vida, self.taxa_rep_dengue, self.dano_dengue)
+        self.schedule.add(dengue)
+        self.grid.place_agent(dengue, (0, 0))
+
+        # Coletor de dados para o gráfico
         self.datacollector = mesa.DataCollector(
             {
                 "Dengues": lambda m: self.count_agents(m, Dengue),
@@ -39,11 +63,17 @@ class SimulacaoModel(mesa.Model):
 
 
     def next_id(self):
+        """
+        Adiciona mais um ao valor do ID do agente a ser colocado no Grid
+        """
         self.current_id += 1
         return self.current_id
     
 
     def is_neighbor(self, dengue_agent, globulo_agent):
+        """
+        Verifica se um agente da dengue e de globulo branco sao vizinhos
+        """
         dengue_pos = dengue_agent.pos
         globulo_pos = globulo_agent.pos
 
@@ -56,6 +86,9 @@ class SimulacaoModel(mesa.Model):
 
 
     def encounter(self):
+        """
+        Lógica de interação entre vírus da Dengue e Globulos Brancos (embate entre eles)
+        """
         dengues = self.count_agents(self, Dengue)
         globulos = self.count_agents(self, GlobuloBranco)
 
@@ -84,6 +117,7 @@ class SimulacaoModel(mesa.Model):
                             new_pos = random.choice(valid_neighbors)
                             self.grid.move_agent(dengue, new_pos)
 
+            # Verificar qual célula tem o menor dano
             elif total_dano_globulos >= total_dano_dengue:
                 # Remover a dengue com menor dano
                 min_dano_dengue = min(dengue_agents, key=lambda agent: agent.dano_dengue)
@@ -99,24 +133,22 @@ class SimulacaoModel(mesa.Model):
                             new_pos = random.choice(valid_neighbors)
                             self.grid.move_agent(globulo, new_pos)
 
-
     def step(self):
-        if not self.initial_dengue_created:
-            # Inicializar primeiro agente Dengue em uma das pontas
-            dengue = Dengue(self.next_id(), self, self.dano_vida, self.taxa_rep_dengue, self.dano_dengue)
-            self.schedule.add(dengue)
-            self.grid.place_agent(dengue, self.initial_dengue_pos)
-            self.initial_dengue_created = True
-        else:
-            self.schedule.step()
-            self.datacollector.collect(self)
-            dengue_agents = [agent for agent in self.schedule.agents if isinstance(agent, Dengue)]
-            globulo_agents = [agent for agent in self.schedule.agents if isinstance(agent, GlobuloBranco)]
+        """
+        Realiza cada step:
+        - Coleta dados
+        - Faz a interação de 'embate' entre dengue e globulos brancos
+        - Verifica a quantidade de vida, podendo parar se curou o corpo ou morreu
+        """
+        self.schedule.step()
+        self.datacollector.collect(self)
+        dengue_agents = [agent for agent in self.schedule.agents if isinstance(agent, Dengue)]
+        globulo_agents = [agent for agent in self.schedule.agents if isinstance(agent, GlobuloBranco)]
 
-            for dengue in dengue_agents:
-                for globulo in globulo_agents:
-                    if self.is_neighbor(dengue, globulo):
-                        self.encounter()
+        for dengue in dengue_agents:
+            for globulo in globulo_agents:
+                if self.is_neighbor(dengue, globulo):
+                    self.encounter()
 
         # Verificar quantidade de vida
         if self.vida > 95:
@@ -128,6 +160,9 @@ class SimulacaoModel(mesa.Model):
 
     @staticmethod
     def count_agents(model, agent_type):
+        """
+        Conta quantos agente de uma instância (dengue e globulos brancos) existem
+        """
         count = 0
         for agent in model.schedule.agents:
             if isinstance(agent, agent_type):
