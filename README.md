@@ -66,6 +66,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Leonardo Vitoriano| Programação do Agente Mosquito e interação com Agente Pessoa. Desenvolvimento da Model responsável por criar os 2 Agentes | Excelente |
 |Júlia Farias| Implementação dos gráficos do comportamento da simulação de contaminação | Excelente |
 | Irwin Schmitt | Estilização da reação do corpo humano. | Regular |
+| Lameque Fernandes | Implementação do agente Pessoa da simulação de contaminação, github pages e contribuição na model. | Boa |
 
 
 ## Outros 
@@ -81,6 +82,8 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 (ii) Percepções:
 
 > Victor: Percebi que a curva de aprendizado com o framework MESA é muito rápida com a documentação e os diferentes exemplos propostos. Além disso, acredito que por esse paradigma poder ser desenvolvido em linguagens mais "usuais" para os membros do grupo, todos se sentiram confortáveis em trabalhar.
+
+> Lameque: Amei o paradigma. Acredito que gostei mais do que eu esperava por termos usado python e o framework mesa, que facilitou muito na realização do projeto e no entendimento do paradigma.
 
 (iii) Contribuições e Fragilidades:
 
