@@ -63,9 +63,12 @@ model_kwargs = {"num_mosquito": mesa.visualization.Slider("Quantidade de Insetos
                 "height": 20}
 
 situation_chart = mesa.visualization.ChartModule(
-   [{"Label": "Não infectados", "Color": "green"},
-    {"Label": "Infectados", "Color": "yellow"}],
-   data_collector_name="datacollector"
+   [{"Label": "Não infectados", "Color": "blue"},
+    {"Label": "Infectados 1 vez", "Color": "grey"},
+    {"Label": "Infectados 2 vezes", "Color": "yellow"},
+    {"Label": "Infectados 3 vezes", "Color": "orange"},
+     ],
+    data_collector_name="datacollector"
 )
 
 server = mesa.visualization.ModularServer(
