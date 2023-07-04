@@ -66,7 +66,7 @@ situation_chart = mesa.visualization.ChartModule(
    [{"Label": "Não infectados", "Color": "blue"},
     {"Label": "Infectados 1 vez", "Color": "grey"},
     {"Label": "Infectados 2 vezes", "Color": "yellow"},
-    {"Label": "Infectados 3 vezes", "Color": "orange"},
+    {"Label": "Infectados 3 vezes", "Color": "red"},
      ],
     data_collector_name="datacollector"
 )
