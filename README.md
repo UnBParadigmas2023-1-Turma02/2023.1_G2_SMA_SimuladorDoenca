@@ -63,6 +63,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | Cibele  |  Programação da interação entre agentes Dengue x Glóbulos Brancos | Excelente |
 | Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
 |Guilherme | Configuração do servidor e interface do MESA e implementações pontuais nos modelos e agentes da simulação de contaminação. | Excelente |
+|Leonardo Vitoriano| Programação do Agente Mosquito e interação com Agente Pessoa. Desenvolvimento da Model responsável por criar os 2 Agentes | Excelente |
 |Júlia Farias| Implementação dos gráficos do comportamento da simulação de contaminação | Excelente |
 | Irwin Schmitt | Estilização da reação do corpo humano. | Regular |
 
