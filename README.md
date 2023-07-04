@@ -31,8 +31,8 @@ Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano
 
 ### Contaminação
 
-![Início da Simulação](simulacao_dengue/assets/image.png)
-![Simulação](simulacao_dengue/assets/simulacao.gif)
+![Início da Simulação](simulacao_dengue/assets/simulacao.png)
+![Durante a  Simulação](simulacao_dengue/assets/simulacao2.png)
 
 ## Instalação 
 **Linguagens**: Python 3.10<br>
