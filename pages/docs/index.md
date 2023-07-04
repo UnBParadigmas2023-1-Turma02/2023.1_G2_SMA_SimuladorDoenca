@@ -1,6 +1,4 @@
-
-
-# Dengoso
+# Dengoso ![Logo](/simulacao_dengue/dengue.png )
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T02 <br>
 **Grupo**: 2<br>
@@ -20,22 +18,33 @@
 
 
 ## Sobre 
-Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano e qual o grau de infecção em cada tipo de ambiente. Foi utilizado o paradigma multiagentes em dois tipos de visualização, uma orientada ao comportamento do vírus no corpo humano e a outra simulando os picos de infecção em ambientes controlados. Para a criação dessas visualizações foi utilizado o programa Mesa. Para fins de recursos fidedignos foram utilizados os Boletins Epidemiológicos de 2022 e 2023 sobre a dengue no Distrito Federal.
+Este projeto tem como objetivo mostrar como a Dengue atua dentro do corpo humano e qual o grau de infecção em cada tipo de ambiente. Dessa forma, Foi utilizado o Paradigma Multiagentes em dois tipos de visualização, uma orientada a **reação do corpo humano ao vírus** e a outra **simulando os picos de infecção em ambientes controlados**. Para a criação dessas visualizações foi utilizado o framework em Python Mesa.
 
-# Observação: ESTE PROGRAMA FOI CONTRUÍDO APENAS PARA FINS EDUCATIVOS E NÃO REALIZA PREVISÕES REAIS!
+# Observação: ESTE PROGRAMA FOI CONSTRUÍDO APENAS PARA FINS EDUCATIVOS E NÃO REALIZA PREVISÕES REAIS!
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+
+### Reação do corpo humano
+
+![Início da Simulação](reacao_corpo_humano/assets/telainicial-1.png)
+![Fim da Simulação](reacao_corpo_humano/assets/telafinal-2.png)
+
+### Contaminação
+
+![Início da Simulação](simulacao_dengue/assets/simulacao.png)
+![Durante a  Simulação](simulacao_dengue/assets/simulacao2.png)
 
 ## Instalação 
-**Linguagens**: Python3.9<br>
+**Linguagens**: Python 3.10<br>
 **Tecnologias**: Mesa 1.2.1<br>
 
-
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+
+O projeto está dividido em duas pastas, em que cada uma tem suas instruções de instalação e uso:
+
+- [Reação do Corpo Humano](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/main/reacao_corpo_humano)
+- [Contaminação](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/main/simulacao_dengue)
+  
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
@@ -51,16 +60,40 @@ TEMPO: +/- 15min
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
-| Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa |
+| Cibele  |  Programação da interação entre agentes Dengue x Glóbulos Brancos | Excelente |
+| Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
+|Guilherme | Configuração do servidor e interface do MESA e implementações pontuais nos modelos e agentes da simulação de contaminação. | Excelente |
+|Leonardo Vitoriano| Programação do Agente Mosquito e interação com Agente Pessoa. Desenvolvimento da Model responsável por criar os 2 Agentes | Excelente |
+|Júlia Farias| Implementação dos gráficos do comportamento da simulação de contaminação | Excelente |
+| Irwin Schmitt | Estilização da reação do corpo humano. | Regular |
+| Lameque Fernandes | Implementação do agente Pessoa da simulação de contaminação, github pages e contribuição na model. | Boa |
+
 
 ## Outros 
-Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
-(i) Lições Aprendidas;
-(ii) Percepções;
-(iii) Contribuições e Fragilidades, e
-(iV) Trabalhos Futuros.
+
+(i) Lições Aprendidas:
+
+> Guilherme: Gostei bastante desse paradigma e especificamente da biblioteca do MESA, pois me abriu os olhos para diversas simulações que podem ser feitas utilizando dessa biblioteca, como simulações de epidemias, interações sociais e ambientais. Além de poder aperfeiçoar na linguagem Python, que não é uma linguagem que sou muito adepto(Java é melhor, ja ganhou meu coração, mas aqui até que eu gostei de você python, fica triste não).
+
+> Júlia: Gostei muito do paradigma, senti a curva de aprendizado mais rápida e a possibilidade de dividir em dois trabalhos fez com que sentisse que todos estavam fazendo partes importantes do trabalho e que pudessemos trabalhar em conjunto ao mesmo tempo.
+
+> Victor: Achei interessante como podemos ver diferentes agentes interagindo com o modelo como um todo, mas, também, com outros agentes, o que me leva a pensar em muitas diferentes utilidades que esse paradigma pode ter e trazer.
+    
+(ii) Percepções:
+
+> Victor: Percebi que a curva de aprendizado com o framework MESA é muito rápida com a documentação e os diferentes exemplos propostos. Além disso, acredito que por esse paradigma poder ser desenvolvido em linguagens mais "usuais" para os membros do grupo, todos se sentiram confortáveis em trabalhar.
+
+> Lameque: Amei o paradigma. Acredito que gostei mais do que eu esperava por termos usado python e o framework mesa, que facilitou muito na realização do projeto e no entendimento do paradigma.
+
+(iii) Contribuições e Fragilidades:
+
+(iV) Trabalhos Futuros:
+
+> Adequação de taxas de morte, contaminação para uma simulação mais real.
+> Para a parte de reação do corpo humano, poderia ter um estudo mais aprofundado de como o vírus da dengue e o corpo trabalham nas diferentes situações, a fim de ter um projeto mais fidedigno à realidade.
+> Adição de um gráfico que trate das mortes.Mostrando total de mortos, quantos morreram na primeira infecção, quantos morreram na segunda infecção e quantos morreram na terceira infecção.
 
 ## Fontes
--https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf
--https://www.saude.df.gov.br/informes-dengue-chikungunya-zika-febre-amarela
--https://noticias.unb.br/125-saude/5742-especialista-da-unb-analisa-aumento-de-casos-de-dengue-no-distrito-federal
+ - https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf 
+ - https://www.saude.df.gov.br/informes-dengue-chikungunya-zika-febre-amarela
+ - https://noticias.unb.br/125-saude/5742-especialista-da-unb-analisa-aumento-de-casos-de-dengue-no-distrito-federal
