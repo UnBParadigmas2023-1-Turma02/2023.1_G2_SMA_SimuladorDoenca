@@ -1,4 +1,4 @@
-# Dengoso
+# Dengoso ![Logo](/simulacao_dengue/dengue.png )
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T02 <br>
 **Grupo**: 2<br>
@@ -86,6 +86,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 
 > Adequação de taxas de morte, contaminação para uma simulação mais real.
 > Para a parte de reação do corpo humano, poderia ter um estudo mais aprofundado de como o vírus da dengue e o corpo trabalham nas diferentes situações, a fim de ter um projeto mais fidedigno à realidade.
+> Adição de um gráfico que trate das mortes.Mostrando total de mortos, quantos morreram na primeira infecção, quantos morreram na segunda infecção e quantos morreram na terceira infecção.
 
 ## Fontes
  - https://www.saude.df.gov.br/documents/37101/554390/11_BOLETIM_MENSAL_ARBOVIROSES-2022_SE_01_a_11.pdf 
