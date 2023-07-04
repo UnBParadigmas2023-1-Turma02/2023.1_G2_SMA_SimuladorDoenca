@@ -46,19 +46,20 @@ O projeto está dividido em duas pastas, em que cada uma tem suas instruções d
 - [Contaminação](https://github.com/UnBParadigmas2023-1-Turma02/2023.1_G2_SMA_SimuladorDoenca/tree/main/simulacao_dengue)
   
 
-## Vídeo
+## Vídeo (Apresentação)
 Link para o vídeo de apresentação dos dois projetos: https://youtu.be/zXkaoay7Sf4
+
 ## Participações
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
 | Cibele  |  Programação da interação entre agentes Dengue x Glóbulos Brancos | Excelente |
-| Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
 |Guilherme | Configuração do servidor e interface do MESA e implementações pontuais nos modelos e agentes da simulação de contaminação. | Excelente |
-|Leonardo Vitoriano| Programação do Agente Mosquito e interação com Agente Pessoa. Desenvolvimento da Model responsável por criar os 2 Agentes | Excelente |
 |Júlia Farias| Implementação dos gráficos do comportamento da simulação de contaminação | Excelente |
 | Irwin Schmitt | Estilização da reação do corpo humano. | Regular |
 | Lameque Fernandes | Implementação do agente Pessoa da simulação de contaminação, github pages e contribuição na model. | Boa |
+|Leonardo Vitoriano| Programação do Agente Mosquito e interação com Agente Pessoa. Desenvolvimento da Model responsável por criar os 2 Agentes | Excelente |
+| Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
 
 
 ## Outros 
