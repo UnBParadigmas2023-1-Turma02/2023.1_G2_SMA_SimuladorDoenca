@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#dengoso-simulacao-de-contaminacao" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -251,10 +256,50 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Simulação Contaminação
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Simulação Contaminação
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alunos-que-trabalharam-nesse-contexto-do-trabalho" class="md-nav__link">
+    Alunos que trabalharam nesse contexto do trabalho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre" class="md-nav__link">
+    Sobre
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -298,6 +343,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alunos-que-trabalharam-nesse-contexto-do-trabalho" class="md-nav__link">
+    Alunos que trabalharam nesse contexto do trabalho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre" class="md-nav__link">
+    Sobre
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -315,9 +384,86 @@
   
 
 
-  <h1>Simulação Contaminação</h1>
-
-
+<h1 id="dengoso-simulacao-de-contaminacao">Dengoso - Simulação de Contaminação</h1>
+<h2 id="alunos-que-trabalharam-nesse-contexto-do-trabalho">Alunos que trabalharam nesse contexto do trabalho</h2>
+<table>
+<thead>
+<tr>
+<th>Matrícula</th>
+<th>Aluno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>190108011</td>
+<td>Guilherme Brito Vilas Boas - @dev-brito</td>
+</tr>
+<tr>
+<td>180104390</td>
+<td>Lameque Fernandes Azevedo - @LamequeFernandes</td>
+</tr>
+<tr>
+<td>201000379</td>
+<td>Leonardo Milomes Vitoriano - @leonardomilv3</td>
+</tr>
+<tr>
+<td>180103792</td>
+<td>Júlia Farias Sousa - @julisous</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sobre">Sobre</h2>
+<p>Essa parte do projeto visa mostrar como seria a contaminação de uma população em relação ao vírus (no caso, o da Dengue). Então, para isso, foram feitos dois tipos de agentes: <strong>Mosquito (vetor da doença)</strong> e <strong>Pessoa</strong>. Eles possuem atributos que permitem a execução de uma simulação interativa e lúdica que mostra o esquema de infecção, reinfecção, morte e cura dos habitantes.</p>
+<p>Para fins de representação dos agentes, foram utilizados os seguintes símbolos:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Símbolo</th>
+<th align="center">Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="Mosquito" src="assets/image-2.png" /></td>
+<td align="center">Mosquito</td>
+</tr>
+<tr>
+<td align="center"><img alt="Humano" src="assets/image-3.png" /></td>
+<td align="center">Pessoa que foi infectada 0 vezes</td>
+</tr>
+<tr>
+<td align="center"><img alt="Humano Infectado 1x" src="assets/image-4.png" /></td>
+<td align="center">Pessoa que foi infectada 1 vez</td>
+</tr>
+<tr>
+<td align="center"><img alt="Humano Infectado 2x" src="assets/image-5.png" /></td>
+<td align="center">Pessoa que foi infectada 2 vezes</td>
+</tr>
+<tr>
+<td align="center"><img alt="Humano Infectado 3x" src="assets/image-6.png" /></td>
+<td align="center">Pessoa que foi infectada 3 vezes</td>
+</tr>
+<tr>
+<td align="center"><img alt="Pessoa Morta" src="assets/image-7.png" /></td>
+<td align="center">Pessoa morta</td>
+</tr>
+<tr>
+<td align="center"><img alt="Pessoa infectada no momento" src="assets/image-8.png" /></td>
+<td align="center">Pessoa infectada no momento</td>
+</tr>
+</tbody>
+</table>
+<h1 id="observacao-este-programa-foi-contruido-apenas-para-fins-educativos-e-nao-realiza-previsoes-reais">Observação: ESTE PROGRAMA FOI CONTRUÍDO APENAS PARA FINS EDUCATIVOS E NÃO REALIZA PREVISÕES REAIS!</h1>
+<h2 id="instalacao">Instalação</h2>
+<p><strong>Linguagens</strong>: Python 3.10.6<br>
+<strong>Tecnologias</strong>: Mesa 1.2.1<br></p>
+<p>Instale as dependências com o comando: <code>pip install -r requirements.txt</code>, comando este executado na raiz do projeto.</p>
+<h2 id="uso">Uso</h2>
+<p>Afim de usar o projeto, rode o seguinte comando para inicializar o mesa: <code>mesa runserver</code>.</p>
+<p>Abra a url <a href="http://127.0.0.1:8521/">http://127.0.0.1:8521/</a> para ter acesso ao projeto.</p>
+<p>Assim, na lateral esquerda é possível alterar os parâmetros desejados para a realização da simulação. No menu superior, na parte mais à direita, é possível apertar 'Start' para iniciar, 'Stop' para parar e 'Reset' para começar novamente a execução.</p>
+<p><img alt="Início da Simulação" src="assets/image.png" />
+<img alt="Simulação" src="assets/simulacao.gif" /></p>
 
 
 
