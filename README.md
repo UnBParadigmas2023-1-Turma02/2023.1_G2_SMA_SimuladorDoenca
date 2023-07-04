@@ -64,6 +64,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | Victor  |  Estruturação da reação do corpo humano com o MESA. Modularização e comentários nos códigos da reação do corpo humano. | Excelente |
 |Guilherme | Configuração do servidor e interface do MESA e implementações pontuais nos modelos e agentes da simulação de contaminação. | Excelente |
 |Júlia Farias| Implementação dos gráficos do comportamento da simulação de contaminação | Excelente |
+| Irwin Schmitt | Estilização da reação do corpo humano. | Regular |
 
 
 ## Outros 
